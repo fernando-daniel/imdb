@@ -2,15 +2,19 @@
   "name": "imdb-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://fernando-daniel.github.io/imdb",
   "dependencies": {
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
+    "react-fontawesome": "^1.6.1",
     "react-scripts": "3.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -27,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
